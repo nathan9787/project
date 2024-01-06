@@ -6,20 +6,20 @@ import * as i from "./name1.js";
 // file2.js
 
 // Retrieve array data from the session
-const array1 = JSON.parse(sessionStorage.getItem("array1")) || [];
-const array2 = JSON.parse(sessionStorage.getItem("array2")) || [];
-const array3 = JSON.parse(sessionStorage.getItem("array3")) || [];
-const array4 = JSON.parse(sessionStorage.getItem("array4")) || [];
-const array5 = JSON.parse(sessionStorage.getItem("array5")) || [];
-const array6 = JSON.parse(sessionStorage.getItem("array6")) || [];
-const Arrayt21 = JSON.parse(sessionStorage.getItem("arrayt21")) || [];
-const Arrayt22 = JSON.parse(sessionStorage.getItem("arrayt22")) || [];
-const Arrayt23 = JSON.parse(sessionStorage.getItem("arrayt23")) || [];
-const Arrayt24 = JSON.parse(sessionStorage.getItem("arrayt24")) || [];
-const Arrayt25 = JSON.parse(sessionStorage.getItem("arrayt25")) || [];
-const Arrayt26 = JSON.parse(sessionStorage.getItem("arrayt26")) || [];
-const lab = JSON.parse(sessionStorage.getItem("lab")) || [];
-const lab2 = JSON.parse(sessionStorage.getItem("lab2")) || [];
+let array2 = JSON.parse(sessionStorage.getItem("array2")) || [];
+let array3 = JSON.parse(sessionStorage.getItem("array3")) || [];
+let array4 = JSON.parse(sessionStorage.getItem("array4")) || [];
+let array1 = JSON.parse(sessionStorage.getItem("array1")) || [];
+let array5 = JSON.parse(sessionStorage.getItem("array5")) || [];
+let array6 = JSON.parse(sessionStorage.getItem("array6")) || [];
+let Arrayt21 = JSON.parse(sessionStorage.getItem("arrayt21")) || [];
+let Arrayt22 = JSON.parse(sessionStorage.getItem("arrayt22")) || [];
+let Arrayt23 = JSON.parse(sessionStorage.getItem("arrayt23")) || [];
+let Arrayt24 = JSON.parse(sessionStorage.getItem("arrayt24")) || [];
+let Arrayt25 = JSON.parse(sessionStorage.getItem("arrayt25")) || [];
+let Arrayt26 = JSON.parse(sessionStorage.getItem("arrayt26")) || [];
+let lab = JSON.parse(sessionStorage.getItem("lab")) || [];
+let lab2 = JSON.parse(sessionStorage.getItem("lab2")) || [];
 
 console.log(array1);
 console.log(array2);
@@ -78,7 +78,7 @@ var rowt46 = [];
 function main() {
   console.log(array1);
 
-  let arrayt11 = array1;
+  let arrayt11 = Array.from(array1);
   row1[0] = i.getRandomValueFromArray(arrayt11);
   let a = [row1[0]];
   arrayt11 = i.valcheck(a, arrayt11);
@@ -114,7 +114,7 @@ function main() {
   outputElement4.textContent = message4;
 
   //----------------secont row-----------
-  let arrayt12 = array2;
+  let arrayt12 = Array.from(array2);
 
   row2[0] = i.getRandomValueFromArray(arrayt12);
   a = [row2[0]];
@@ -147,7 +147,7 @@ function main() {
   message4 = row2[4];
   outputElement4.textContent = message4;
   //----------------third row-----------
-  let arrayt13 = array3;
+  let arrayt13 = Array.from(array3);
   row3[0] = i.getRandomValueFromArray(arrayt13);
   a = [row3[0]];
   arrayt13 = i.valcheck(a, arrayt13);
@@ -178,7 +178,7 @@ function main() {
   message4 = row3[4];
   outputElement4.textContent = message4;
   //----------------fourth row-----------
-  let arrayt14 = array4;
+  let arrayt14 = Array.from(array4);
   row4[0] = i.getRandomValueFromArray(arrayt14);
   a = [row4[0]];
   arrayt14 = i.valcheck(a, arrayt14);
@@ -208,7 +208,7 @@ function main() {
   message4 = row4[4];
   outputElement4.textContent = message4;
   //----------------fivth row-----------
-  let arrayt15 = array5;
+  let arrayt15 = Array.from(array5);
   row5[0] = i.getRandomValueFromArray(arrayt15);
   a = [row5[0]];
   arrayt15 = i.valcheck(a, arrayt15);
@@ -239,7 +239,7 @@ function main() {
   message4 = row5[4];
   outputElement4.textContent = message4;
   //----------sixth row----------
-  let arrayt16 = array6;
+  let arrayt16 = Array.from(array6);
   row6[0] = i.getRandomValueFromArray(arrayt16);
   a = [row6[0]];
   arrayt16 = i.valcheck(a, arrayt16);
@@ -271,40 +271,52 @@ function main() {
 }
 
 function main2() {
-  let arrayt21 = Arrayt21;
-  let a = [row1[0]];
-   arrayt21 = i.valcheck(a, arrayt21);
-  rowt21[0] = i.getRandomValueFromArray(arrayt21);
-  let a1 = [row1[1], rowt21[0]];
-  arrayt21 = i.valcheck(a1, arrayt21);
-  rowt21[1] = i.getRandomValueFromArray(arrayt21);
-  let a2 = [row1[2], rowt21[0], rowt21[1]];
-  arrayt21 = i.valcheck(a2, arrayt21);
-  rowt21[2] = i.getRandomValueFromArray(arrayt21);
-  let a3 = [row1[3], rowt21[0], rowt21[1], rowt21[2]];
-  arrayt21 = i.valcheck(a3, arrayt21);
-  rowt21[3] = i.getRandomValueFromArray(arrayt21);
-  let a4 = [row1[4], rowt21[0], rowt21[1], rowt21[2], rowt21[3]];
-  arrayt21 = i.valcheck(a4, arrayt21);
-  rowt21[4] = i.getRandomValueFromArray(arrayt21); 
-  console.log(rowt21)
-  i.changelab(lab2, rowt21);
-
+  let a = i.findMatchingIndices(Arrayt21, row1);
+  console.log(a);
+  console.log(a.length);
+  if (a = 1) {
+    let d = i.swapWithFirst(Arrayt21, a);
+    console.log(Arrayt21);
+  } else if(a=2) {
+    let b = i.swapArrayElements(Arrayt21, [a]);
+    console.log(Arrayt21);
+  } else {
+    
+  }
+  // i.changelab(Arrayt21)
+  // let arrayt21 = Array.from(Arrayt21);
+  // let a = [row1[0]];
+  //  arrayt21 = i.valcheck(a, arrayt21);
+  // rowt21[0] = i.getRandomValueFromArray(arrayt21);
+  // let a1 = [row1[1], rowt21[0]];
+  // arrayt21 = i.valcheck(a1, arrayt21);
+  // rowt21[1] = i.getRandomValueFromArray(arrayt21);
+  // let a2 = [row1[2], rowt21[0], rowt21[1]];
+  // arrayt21 = i.valcheck(a2, arrayt21);
+  // rowt21[2] = i.getRandomValueFromArray(arrayt21);
+  // let a3 = [row1[3], rowt21[0], rowt21[1], rowt21[2]];
+  // arrayt21 = i.valcheck(a3, arrayt21);
+  // rowt21[3] = i.getRandomValueFromArray(arrayt21);
+  // let a4 = [ rowt21[0], rowt21[1], rowt21[2], rowt21[3]];
+  // arrayt21 = i.valcheck(a4, arrayt21);
+  // rowt21[4] = i.getRandomValueFromArray(arrayt21);
+  // console.log(rowt21)
+  // // i.changelab(lab2, rowt21);
 
   let outputElement = document.getElementById("c01");
-  let message = rowt21[0];
+  let message = Arrayt21[0];
   outputElement.textContent = message;
   let outputElement1 = document.getElementById("c02");
-  let message1 = rowt21[1];
+  let message1 = Arrayt21[1];
   outputElement1.textContent = message1;
   outputElement1 = document.getElementById("c03");
-  message1 = rowt21[2];
+  message1 = Arrayt21[2];
   outputElement1.textContent = message1;
   outputElement1 = document.getElementById("c04");
-  message1 = rowt21[3];
+  message1 = Arrayt21[3];
   outputElement1.textContent = message1;
   outputElement1 = document.getElementById("c05");
-  message1 = rowt21[4];
+  message1 = Arrayt21[4];
   outputElement1.textContent = message1;
   //------------secont row-------
   let arrayt22 = Arrayt22;
