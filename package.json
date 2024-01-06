@@ -1,0 +1,39 @@
+{
+  "name": "time-table-app",
+  "version": "1.0.0",
+  "description": "A timetable scheduler app is a comprehensive solution designed to streamline and organize daily schedules and routines. With a user-friendly interface, the app enables users to efficiently manage their time, plan activities, and stay organized. Users can create personalized schedules for various aspects of their lives, such as work, study, or personal activities. The app allows for easy customization, letting users input class timings, meetings, deadlines, and other events with details. Users can set reminders, receive notifications, and sync their schedules across devices for seamless accessibility. The app's intuitive design facilitates quick navigation enabling users to view daily, weekly, or monthly overviews of their schedules",
+  "main": "index.js",
+  "author": "logu",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "timetable",
+     "win": {
+    "target": ["nsis","zip","msi"]
+      },
+    
+      "icon": "icon2.png"
+  },
+     
+
+      
+
+     
+    "nsis": {
+    "oneClick": false,
+    "installerIcon": "src/icon2.png",
+    "uninstallerIcon": "src/icon2.png",
+    "uninstallDisplayName": "My-time table-uninstaller",
+    "license": "license.md",
+    "allowToChangeInstallationDirectory": true
+  }
+
+
+}
