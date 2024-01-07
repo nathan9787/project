@@ -1,3 +1,15 @@
+function getRandomArray(originalArray) {
+  // Create a copy of the original array
+  let randomArray = originalArray.slice();
+
+  // Shuffle the elements randomly
+  for (let i = randomArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [randomArray[i], randomArray[j]] = [randomArray[j], randomArray[i]];
+  }
+  console.log(randomArray);
+  return randomArray;
+}
 function valcheck(array, originalArray) {
   array.forEach((i) => {
     // console.log(i);
@@ -35,15 +47,15 @@ function changelab(trval, arry) {
   );
   if (count == 1) {
     arry.splice(b, 1);
-    arry.splice(a, 0, "Lab","Lab");
+    arry.splice(a, 0, targetValue, targetValue);
   } else if (count == 2) {
     // arry.splice(b, 1);
     arry.splice(b, 1);
-    arry.splice(a, 1, "Lab","Lab");
+    arry.splice(a, 1, targetValue, targetValue);
   } else {
     console.log(count);
     arry.splice(b, 1);
-    arry.splice(a, 0, "Lab", "Lab");
+    arry.splice(a, 0, targetValue, targetValue);
   }
 
   // arry.splice(a, 0, "lab");
@@ -105,65 +117,66 @@ function findMatchingIndices(input, ...arrays) {
     // Check if the element exists in the same index across all arrays
     arrays.forEach((element) => {
       console.log(element);
-            
-        if (element[i] == elementToCompare) {
-          commonIndices.push(i);
-          console.log(commonIndices);
-            }
+
+      if (element[i] == elementToCompare) {
+        commonIndices.push(i);
+        console.log(commonIndices);
+      }
     });
   }
-return commonIndices;
+  return commonIndices;
 }
-  function swapArrayElements(array, indexPairs) {
-    for (const [index1, index2] of indexPairs) {
-      if (
-        isValidIndex(index1, array.length) &&
-        isValidIndex(index2, array.length)
-      ) {
-        // Swap the values at the specified indices
-        [array[index1], array[index2]] = [array[index2], array[index1]];
-      } else {
-        console.log(`Invalid indices (${index1}, ${index2}) for swapping.`);
-      }
-    }
-  }
-
-  function isValidIndex(index, arrayLength) {
-    return index >= 0 && index < arrayLength;
-  }
-
-
-  // Example array
-
-  // Display the updated array
-  // console.log(myArray);
-
-
-  // // Example array
-  // let myArray = [1, 2, 3, 4, 5];
-
-  // // Swap values at indices 1 and 3
-  // swapArrayElements(myArray, 1, 3);
-
-  // // Display the updated array
-  // console.log(myArray);
-  function swapWithFirst(array, index) {
-    if (index >= 0 && index < array.length) {
-      // Swap the value at the specified index with the value at the first index (index 0)
-      [array[0], array[index]] = [array[index], array[0]];
+function swapArrayElements(array, indexPairs) {
+  for (const [index1, index2] of indexPairs) {
+    if (
+      isValidIndex(index1, array.length) &&
+      isValidIndex(index2, array.length)
+    ) {
+      // Swap the values at the specified indices
+      [array[index1], array[index2]] = [array[index2], array[index1]];
     } else {
-      console.log("Invalid index for swapping.");
+      console.log(`Invalid indices (${index1}, ${index2}) for swapping.`);
     }
   }
+}
 
-  // Example array
+function isValidIndex(index, arrayLength) {
+  return index >= 0 && index < arrayLength;
+}
 
+// Example array
 
-  export {
-    valcheck,
-    getRandomValueFromArray,
-    changelab,
-    getSelectedValue,
-    valcheck1, findMatchingIndices, swapArrayElements, swapWithFirst
-  };
+// Display the updated array
+// console.log(myArray);
 
+// // Example array
+// let myArray = [1, 2, 3, 4, 5];
+
+// // Swap values at indices 1 and 3
+// swapArrayElements(myArray, 1, 3);
+
+// // Display the updated array
+// console.log(myArray);
+function swapWithFirst(array, index) {
+  if (index >= 0 && index < array.length) {
+    // Swap the value at the specified index with the value at the first index (index 0)
+    // array.splice(index, 1);
+    // array.splice(index, 0, targetValue, targetValue);
+    [array[0], array[index]] = [array[index], array[0]];
+  } else {
+    console.log("Invalid index for swapping.");
+  }
+}
+
+// Example array
+
+export {
+  valcheck,
+  getRandomValueFromArray,
+  changelab,
+  getSelectedValue,
+  valcheck1,
+  findMatchingIndices,
+  swapArrayElements,
+  swapWithFirst,getRandomArray
+};

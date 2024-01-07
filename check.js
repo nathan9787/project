@@ -79,19 +79,20 @@ function main() {
   console.log(array1);
 
   let arrayt11 = Array.from(array1);
-  row1[0] = i.getRandomValueFromArray(arrayt11);
-  let a = [row1[0]];
-  arrayt11 = i.valcheck(a, arrayt11);
-  row1[1] = i.getRandomValueFromArray(arrayt11);
-  let b = [row1[1]];
-  arrayt11 = i.valcheck(b, arrayt11);
-  row1[2] = i.getRandomValueFromArray(arrayt11);
-  let c = [row1[2]];
-  arrayt11 = i.valcheck(c, arrayt11);
-  row1[3] = i.getRandomValueFromArray(arrayt11);
-  let d = [row1[3]];
-  arrayt11 = i.valcheck(d, arrayt11);
-  row1[4] = i.getRandomValueFromArray(arrayt11);
+
+  row1 = i.getRandomArray(arrayt11);
+  // let a = [row1[0]];
+  // arrayt11 = i.valcheck(a, arrayt11);
+  // row1[1] = i.getRandomValueFromArray(arrayt11);
+  // let b = [row1[1]];
+  // arrayt11 = i.valcheck(b, arrayt11);
+  // row1[2] = i.getRandomValueFromArray(arrayt11);
+  // let c = [row1[2]];
+  // arrayt11 = i.valcheck(c, arrayt11);
+  // row1[3] = i.getRandomValueFromArray(arrayt11);
+  // let d = [row1[3]];
+  // arrayt11 = i.valcheck(d, arrayt11);
+  // row1[4] = i.getRandomValueFromArray(arrayt11);
 
   i.changelab(lab, row1);
 
@@ -116,19 +117,19 @@ function main() {
   //----------------secont row-----------
   let arrayt12 = Array.from(array2);
 
-  row2[0] = i.getRandomValueFromArray(arrayt12);
-  a = [row2[0]];
-  arrayt12 = i.valcheck(a, arrayt12);
-  row2[1] = i.getRandomValueFromArray(arrayt12);
-  b = [row2[1]];
-  arrayt12 = i.valcheck(b, arrayt12);
-  row2[2] = i.getRandomValueFromArray(arrayt12);
-  c = [row2[2]];
-  arrayt12 = i.valcheck(c, arrayt12);
-  row2[3] = i.getRandomValueFromArray(arrayt12);
-  d = [row2[3]];
-  arrayt12 = i.valcheck(d, arrayt12);
-  row2[4] = i.getRandomValueFromArray(arrayt12);
+  row2 = i.getRandomArray(arrayt12);
+  // a = [row2[0]];
+  // arrayt12 = i.valcheck(a, arrayt12);
+  // row2[1] = i.getRandomValueFromArray(arrayt12);
+  // b = [row2[1]];
+  // arrayt12 = i.valcheck(b, arrayt12);
+  // row2[2] = i.getRandomValueFromArray(arrayt12);
+  // c = [row2[2]];
+  // arrayt12 = i.valcheck(c, arrayt12);
+  // row2[3] = i.getRandomValueFromArray(arrayt12);
+  // d = [row2[3]];
+  // arrayt12 = i.valcheck(d, arrayt12);
+  // row2[4] = i.getRandomValueFromArray(arrayt12);
   i.changelab(lab, row2);
 
   outputElement = document.getElementById("co6");
@@ -148,19 +149,19 @@ function main() {
   outputElement4.textContent = message4;
   //----------------third row-----------
   let arrayt13 = Array.from(array3);
-  row3[0] = i.getRandomValueFromArray(arrayt13);
-  a = [row3[0]];
-  arrayt13 = i.valcheck(a, arrayt13);
-  row3[1] = i.getRandomValueFromArray(arrayt13);
-  b = [row3[1]];
-  arrayt13 = i.valcheck(b, arrayt13);
-  row3[2] = i.getRandomValueFromArray(arrayt13);
-  c = [row3[2]];
-  arrayt13 = i.valcheck(c, arrayt13);
-  row3[3] = i.getRandomValueFromArray(arrayt13);
-  d = [row3[3]];
-  arrayt13 = i.valcheck(d, arrayt13);
-  row3[4] = i.getRandomValueFromArray(arrayt13);
+  row3 = i.getRandomArray(arrayt13);
+  // a = [row3[0]];
+  // arrayt13 = i.valcheck(a, arrayt13);
+  // row3[1] = i.getRandomValueFromArray(arrayt13);
+  // b = [row3[1]];
+  // arrayt13 = i.valcheck(b, arrayt13);
+  // row3[2] = i.getRandomValueFromArray(arrayt13);
+  // c = [row3[2]];
+  // arrayt13 = i.valcheck(c, arrayt13);
+  // row3[3] = i.getRandomValueFromArray(arrayt13);
+  // d = [row3[3]];
+  // arrayt13 = i.valcheck(d, arrayt13);
+  // row3[4] = i.getRandomValueFromArray(arrayt13);
   // i.changelab(row3);
   outputElement = document.getElementById("co11");
   message = row3[0];
@@ -179,19 +180,19 @@ function main() {
   outputElement4.textContent = message4;
   //----------------fourth row-----------
   let arrayt14 = Array.from(array4);
-  row4[0] = i.getRandomValueFromArray(arrayt14);
-  a = [row4[0]];
-  arrayt14 = i.valcheck(a, arrayt14);
-  row4[1] = i.getRandomValueFromArray(arrayt14);
-  b = [row4[1]];
-  arrayt14 = i.valcheck(b, arrayt14);
-  row4[2] = i.getRandomValueFromArray(arrayt14);
-  c = [row4[2]];
-  arrayt14 = i.valcheck(c, arrayt14);
-  row4[3] = i.getRandomValueFromArray(arrayt14);
-  d = [row4[3]];
-  arrayt14 = i.valcheck(d, arrayt14);
-  row4[4] = i.getRandomValueFromArray(arrayt14);
+  row4 = i.getRandomArray(arrayt14);
+  // a = [row4[0]];
+  // arrayt14 = i.valcheck(a, arrayt14);
+  // row4[1] = i.getRandomValueFromArray(arrayt14);
+  // b = [row4[1]];
+  // arrayt14 = i.valcheck(b, arrayt14);
+  // row4[2] = i.getRandomValueFromArray(arrayt14);
+  // c = [row4[2]];
+  // arrayt14 = i.valcheck(c, arrayt14);
+  // row4[3] = i.getRandomValueFromArray(arrayt14);
+  // d = [row4[3]];
+  // arrayt14 = i.valcheck(d, arrayt14);
+  // row4[4] = i.getRandomValueFromArray(arrayt14);
   outputElement = document.getElementById("co16");
   message = row4[0];
   outputElement.textContent = message;
@@ -209,19 +210,19 @@ function main() {
   outputElement4.textContent = message4;
   //----------------fivth row-----------
   let arrayt15 = Array.from(array5);
-  row5[0] = i.getRandomValueFromArray(arrayt15);
-  a = [row5[0]];
-  arrayt15 = i.valcheck(a, arrayt15);
-  row5[1] = i.getRandomValueFromArray(arrayt15);
-  b = [row5[1]];
-  arrayt15 = i.valcheck(b, arrayt15);
-  row5[2] = i.getRandomValueFromArray(arrayt15);
-  c = [row5[2]];
-  arrayt15 = i.valcheck(c, arrayt15);
-  row5[3] = i.getRandomValueFromArray(arrayt15);
-  d = [row5[3]];
-  arrayt15 = i.valcheck(d, arrayt15);
-  row5[4] = i.getRandomValueFromArray(arrayt15);
+  row5 = i.getRandomArray(arrayt15);
+  // a = [row5[0]];
+  // arrayt15 = i.valcheck(a, arrayt15);
+  // row5[1] = i.getRandomValueFromArray(arrayt15);
+  // b = [row5[1]];
+  // arrayt15 = i.valcheck(b, arrayt15);
+  // row5[2] = i.getRandomValueFromArray(arrayt15);
+  // c = [row5[2]];
+  // arrayt15 = i.valcheck(c, arrayt15);
+  // row5[3] = i.getRandomValueFromArray(arrayt15);
+  // d = [row5[3]];
+  // arrayt15 = i.valcheck(d, arrayt15);
+  // row5[4] = i.getRandomValueFromArray(arrayt15);
   // i.changelab(row5);
   outputElement = document.getElementById("co21");
   message = row5[0];
@@ -240,19 +241,19 @@ function main() {
   outputElement4.textContent = message4;
   //----------sixth row----------
   let arrayt16 = Array.from(array6);
-  row6[0] = i.getRandomValueFromArray(arrayt16);
-  a = [row6[0]];
-  arrayt16 = i.valcheck(a, arrayt16);
-  row6[1] = i.getRandomValueFromArray(arrayt16);
-  b = [row6[1]];
-  arrayt16 = i.valcheck(b, arrayt16);
-  row6[2] = i.getRandomValueFromArray(arrayt16);
-  c = [row6[2]];
-  arrayt16 = i.valcheck(c, arrayt16);
-  row6[3] = i.getRandomValueFromArray(arrayt16);
-  d = [row6[3]];
-  arrayt16 = i.valcheck(d, arrayt16);
-  row6[4] = i.getRandomValueFromArray(arrayt16);
+  row6 = i.getRandomArray(arrayt16);
+  // a = [row6[0]];
+  // arrayt16 = i.valcheck(a, arrayt16);
+  // row6[1] = i.getRandomValueFromArray(arrayt16);
+  // b = [row6[1]];
+  // arrayt16 = i.valcheck(b, arrayt16);
+  // row6[2] = i.getRandomValueFromArray(arrayt16);
+  // c = [row6[2]];
+  // arrayt16 = i.valcheck(c, arrayt16);
+  // row6[3] = i.getRandomValueFromArray(arrayt16);
+  // d = [row6[3]];
+  // arrayt16 = i.valcheck(d, arrayt16);
+  // row6[4] = i.getRandomValueFromArray(arrayt16);
   outputElement = document.getElementById("co26");
   message = row6[0];
   outputElement.textContent = message;
@@ -271,80 +272,113 @@ function main() {
 }
 
 function main2() {
-  let a = i.findMatchingIndices(Arrayt21, row1);
+  let arrayt21 = Array.from(Arrayt21);
+  let newarray = i.getRandomArray(arrayt21);
+  i.changelab(lab2, newarray);
+  console.log(newarray);
+  console.log(row1);
+
+  let a = i.findMatchingIndices(newarray, row1);
   console.log(a);
   console.log(a.length);
-  if (a = 1) {
-    let d = i.swapWithFirst(Arrayt21, a);
-    console.log(Arrayt21);
-  } else if(a=2) {
-    let b = i.swapArrayElements(Arrayt21, [a]);
-    console.log(Arrayt21);
+  if (a.length == 1) {
+    let d = i.swapWithFirst(newarray, [a]);
+    console.log(newarray);
+  } else if (a.length == 2) {
+    let b = i.swapArrayElements(newarray, [a]);
+    console.log(newarray);
+  } else if (a.length == 0) {
+    console.log("array valve enter else ");
   } else {
-    
+    console.log("array valve not swap ");
   }
-  // i.changelab(Arrayt21)
-  // let arrayt21 = Array.from(Arrayt21);
-  // let a = [row1[0]];
-  //  arrayt21 = i.valcheck(a, arrayt21);
-  // rowt21[0] = i.getRandomValueFromArray(arrayt21);
-  // let a1 = [row1[1], rowt21[0]];
-  // arrayt21 = i.valcheck(a1, arrayt21);
-  // rowt21[1] = i.getRandomValueFromArray(arrayt21);
-  // let a2 = [row1[2], rowt21[0], rowt21[1]];
-  // arrayt21 = i.valcheck(a2, arrayt21);
-  // rowt21[2] = i.getRandomValueFromArray(arrayt21);
-  // let a3 = [row1[3], rowt21[0], rowt21[1], rowt21[2]];
-  // arrayt21 = i.valcheck(a3, arrayt21);
-  // rowt21[3] = i.getRandomValueFromArray(arrayt21);
-  // let a4 = [ rowt21[0], rowt21[1], rowt21[2], rowt21[3]];
-  // arrayt21 = i.valcheck(a4, arrayt21);
-  // rowt21[4] = i.getRandomValueFromArray(arrayt21);
-  // console.log(rowt21)
-  // // i.changelab(lab2, rowt21);
 
   let outputElement = document.getElementById("c01");
-  let message = Arrayt21[0];
+  let message = newarray[0];
   outputElement.textContent = message;
   let outputElement1 = document.getElementById("c02");
-  let message1 = Arrayt21[1];
+  let message1 = newarray[1];
   outputElement1.textContent = message1;
   outputElement1 = document.getElementById("c03");
-  message1 = Arrayt21[2];
+  message1 = newarray[2];
   outputElement1.textContent = message1;
   outputElement1 = document.getElementById("c04");
-  message1 = Arrayt21[3];
+  message1 = newarray[3];
   outputElement1.textContent = message1;
   outputElement1 = document.getElementById("c05");
-  message1 = Arrayt21[4];
+  message1 = newarray[4];
   outputElement1.textContent = message1;
   //------------secont row-------
-  let arrayt22 = Arrayt22;
-  a = [row2[0]];
-  arrayt22 = i.valcheck(a, arrayt22);
-  rowt22[0] = i.getRandomValueFromArray(arrayt22);
-  a1 = [rowt22[0]];
-  arrayt22 = i.valcheck(a1, arrayt22);
-  rowt22[1] = i.getRandomValueFromArray(arrayt22);
+  let arrayt22 = Array.from(Arrayt22);
+  newarray = i.getRandomArray(arrayt22);
+  i.changelab(lab2, newarray);
+  console.log(newarray);
+  console.log(row2);
+
+  a = i.findMatchingIndices(newarray, row2);
+  console.log(a);
+  console.log(a.length);
+  if (a.length == 1) {
+    let d = i.swapWithFirst(newarray, [a]);
+    console.log(newarray);
+  } else if (a.length == 2) {
+    let b = i.swapArrayElements(newarray, [a]);
+    console.log(newarray);
+  } else if (a.length == 0) {
+    console.log("array valve enter else ");
+  } else {
+    console.log("array valve not swap ");
+  }
   outputElement = document.getElementById("c06");
-  message = rowt22[0];
+  message = newarray[0];
   outputElement.textContent = message;
   outputElement1 = document.getElementById("c07");
-  message1 = rowt22[1];
+  message1 = newarray[1];
+  outputElement1.textContent = message1;
+  outputElement1 = document.getElementById("c08");
+  message1 = newarray[2];
+  outputElement1.textContent = message1;
+  outputElement1 = document.getElementById("c09");
+  message1 = newarray[3];
+  outputElement1.textContent = message1;
+  outputElement1 = document.getElementById("c010");
+  message1 = newarray[4];
   outputElement1.textContent = message1;
   //---------third row------------
-  let arrayt23 = Arrayt23;
-  a = [row3[0]];
-  arrayt23 = i.valcheck(a, arrayt23);
-  rowt23[0] = i.getRandomValueFromArray(arrayt23);
-  a1 = [rowt23[0]];
-  arrayt23 = i.valcheck(a1, arrayt23);
-  rowt23[1] = i.getRandomValueFromArray(arrayt23);
+  let arrayt23 = Array.from(Arrayt23);
+  newarray = i.getRandomArray(arrayt23);
+  // i.changelab(lab2, newarray);
+  console.log(newarray);
+  console.log(row3);
+
+  a = i.findMatchingIndices(newarray, row3);
+  console.log(a);
+  console.log(a.length);
+  if (a.length == 1) {
+    let d = i.swapWithFirst(newarray, [a]);
+    console.log(newarray);
+  } else if (a.length == 2) {
+    let b = i.swapArrayElements(newarray, [a]);
+    console.log(newarray);
+  } else if (a == 0) {
+    console.log("array valve enter else ");
+  } else {
+    console.log("array valve not swap ");
+  }
   outputElement = document.getElementById("c011");
-  message = rowt23[0];
+  message = newarray[0];
   outputElement.textContent = message;
   outputElement1 = document.getElementById("c012");
-  message1 = rowt23[1];
+  message1 = newarray[1];
+  outputElement1.textContent = message1;
+  outputElement1 = document.getElementById("c013");
+  message1 = newarray[2];
+  outputElement1.textContent = message1;
+  outputElement1 = document.getElementById("c014");
+  message1 = newarray[3];
+  outputElement1.textContent = message1;
+  outputElement1 = document.getElementById("c015");
+  message1 = newarray[4];
   outputElement1.textContent = message1;
   //----------fourth row------------
   let arrayt24 = Arrayt24;
