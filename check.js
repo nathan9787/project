@@ -346,39 +346,39 @@ function main2() {
   outputElement1.textContent = message1;
   //---------third row------------
   let arrayt23 = Array.from(Arrayt23);
-  newarray = i.getRandomArray(arrayt23);
+ let newarray3 = i.getRandomArray(arrayt23);
   // i.changelab(lab2, newarray);
-  console.log(newarray);
+  console.log(newarray3);
   console.log(row3);
 
-  a = i.findMatchingIndices(newarray, row3);
+  a = i.findMatchingIndices(newarray3, row3);
   console.log(a);
   console.log(a.length);
   if (a.length == 1) {
-    let d = i.swapWithFirst(newarray, [a]);
-    console.log(newarray);
+    let d = i.swapWithFirst(newarray3, [a]);
+    console.log(newarray3);
   } else if (a.length == 2) {
-    let b = i.swapArrayElements(newarray, [a]);
-    console.log(newarray);
+    let b = i.swapArrayElements(newarray3, [a]);
+    console.log(newarray3);
   } else if (a == 0) {
     console.log("array valve enter else ");
-  } else {
+  } else {3
     console.log("array valve not swap ");
   }
   outputElement = document.getElementById("c011");
-  message = newarray[0];
+  message = newarray3[0];
   outputElement.textContent = message;
   outputElement1 = document.getElementById("c012");
-  message1 = newarray[1];
+  message1 = newarray3[1];
   outputElement1.textContent = message1;
   outputElement1 = document.getElementById("c013");
-  message1 = newarray[2];
+  message1 = newarray3[2];
   outputElement1.textContent = message1;
   outputElement1 = document.getElementById("c014");
-  message1 = newarray[3];
+  message1 = newarray3[3];
   outputElement1.textContent = message1;
   outputElement1 = document.getElementById("c015");
-  message1 = newarray[4];
+  message1 = newarray3[4];
   outputElement1.textContent = message1;
   //----------fourth row------------
   let arrayt24 = Arrayt24;
